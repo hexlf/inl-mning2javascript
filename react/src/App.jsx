@@ -1,8 +1,10 @@
+import './App.css'
 function App() {
   return (
-    <div className="container">
-       <p>hello</p>
-    </div>
+    <>
+      <p>e</p>
+      <p>a</p>
+    </>
   )
 }
 export default App

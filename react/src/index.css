@@ -777,6 +777,7 @@ a.btn-area:hover{
       border: solid 2px red;
     }
     */
+
     input:required:valid{
       color: var(--clr-green-primary);
     }
@@ -800,6 +801,11 @@ a.btn-area:hover{
       height: 60px;
       width: 102px;
       border-radius: 5px;
+    }
+    
+    button:hover{
+      background-color: var(--clr-green-primary);
+      color: var(--clr-white-primary);
     }
   }
 }

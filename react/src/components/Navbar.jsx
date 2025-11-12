@@ -1,3 +1,5 @@
+import { Link, NavLink  } from 'react-router-dom'
+
 const Navbar = () => {
   return (
     <div>
@@ -22,15 +24,15 @@ const Navbar = () => {
         </div>
         <div className="Navbarbottom">
           <div className="needrow">
-              <a href="X"><img className="logo" src="src/img/Logo.png" alt="Logo" /></a>
+              <a ><img className="logo" src="src/img/Logo.png" alt="Logo" /></a>
               <div>
-                <a className="greenlinks NeedsUrbanFont" href="x">Home</a>
-                <a className="greenlinks NeedsUrbanFont" href="x">About Us</a>
-                <a className="greenlinks NeedsUrbanFont" href="x">Services</a>
-                <a className="greenlinks NeedsUrbanFont" href="x">Contact Us</a>
+                <NavLink className="greenlinks NeedsUrbanFont" to="/">Home</NavLink>
+                <NavLink className="greenlinks NeedsUrbanFont" to="/about">About Us</NavLink>
+                <NavLink className="greenlinks NeedsUrbanFont" to="/Services">Services</NavLink>
+                <NavLink className="greenlinks NeedsUrbanFont" to="/Contact">Contact Us</NavLink>
               </div>
               <div>
-                <a href="booking.jsx" className="NeedToBeYelowbtn btn-area btn-navbar NeedsUrbanFont">Book Now</a>
+                <NavLink to="/booking" className="NeedToBeYelowbtn btn-area btn-navbar NeedsUrbanFont">Book Now</NavLink>
               </div>
           </div>
         </div>

@@ -1,33 +1,28 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css'
+
+import Home from './pages/Home'
+import About from './pages/About'
+import Services from './pages/Services'
+import Contact from './pages/Contact'
+import Booking from './pages/Booking'
+
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import AboutUs from './components/AboutUs'
-import Brands from './components/Brands'
-import Services from './components/Services'
-import Testimonials from './components/Testimonials'
-import Choose from './components/Choose'
-import Pricing from './components/Pricing'
-import Looking from './components/Looking'
-import Latest from './components/Latest'
-import Subscribe from './components/Subscribe'
 import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar/>
-      <Hero/>
-      <AboutUs/>
-      <Brands/>
-      <Services/>
-      <Testimonials/>
-      <Choose/>
-      <Pricing/>
-      <Looking/>
-      <Latest/>
-      <Subscribe/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/Services' element={<Services />}/>
+        <Route path='/Contact' element={<Contact />}/>
+        <Route path='/booking' element={<Booking />}/>
+      </Routes>
       <Footer/>
-    </>
+    </BrowserRouter>
   )
 }
 export default App

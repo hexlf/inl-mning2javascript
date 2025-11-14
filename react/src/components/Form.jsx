@@ -31,21 +31,21 @@ const Form = () => {
             </div>
             <div className='Form-area'>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="text">Your Name</label><br />
+                    <label>Your Name</label><br />
                     <input type="text" name="name" value={formdata.name} onChange={handleInputChange} required placeholder='Your name' /> <br />
                     <div className='form-samerow'>
                         <div>
-                            <label htmlFor='email'>Email</label><br />
+                            <label>Email</label><br />
                             <input type="email" name="email" value={formdata.email} onChange={handleInputChange} required placeholder='Email' /><br />
                         </div>
                         <div>
-                            <label htmlFor='Telephone'>Telephone</label><br />
+                            <label>Telephone</label><br />
                             <input type="text" name="phoneNumber" value={formdata.phoneNumber} onChange={handleInputChange} placeholder='Telephone' /><br />
                         </div>
                     </div>
-                    <label htmlFor='Subject'>Subject</label><br />
+                    <label>Subject</label><br />
                     <input type="text" name="subject" value={formdata.subject} onChange={handleInputChange} required placeholder='How can we help you' /><br />
-                    <label htmlFor='Comment'>Comments / Questions</label><br />
+                    <label>Comments / Questions</label><br />
                     <input className='formcomment' type="text" name="comment" value={formdata.comment} onChange={handleInputChange} required placeholder='Comments' /><br />
                     <button className='NeedToBeYelowbtn' type="submit">submit</button>
                 </form>
